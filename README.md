@@ -1,9 +1,9 @@
 # ProxyMan
 
-[![Total Downloads](https://img.shields.io/packagecontrol/dt/tregor/proxyman?style=flat-square)](https://packagist.org/packages/tregor/error-handler)
-[![GitHub Version](https://img.shields.io/github/tag/tregor/proxyman.svg?style=flat-square)](https://github.com/tregor/ErrorHandler)
-[![Last Commit](https://img.shields.io/github/last-commit/tregor/proxyman.svg?style=flat-square)](https://github.com/tregor/ErrorHandler)
-[![PHP Req](https://img.shields.io/packagist/php-v/tregor/proxyman.svg?style=flat-square)](https://packagist.org/packages/tregor/error-handler)
+[![Total Downloads](https://img.shields.io/packagist/dt/tregor/proxyman?style=flat-square)](https://packagist.org/packages/tregor/proxyman)
+[![GitHub Version](https://img.shields.io/github/tag/tregor/proxyman.svg?style=flat-square)](https://github.com/tregor/proxyman)
+[![Last Commit](https://img.shields.io/github/last-commit/tregor/proxyman.svg?style=flat-square)](https://github.com/tregor/proxyman)
+[![PHP Req](https://img.shields.io/packagist/php-v/tregor/proxyman.svg?style=flat-square)](https://packagist.org/packages/tregor/proxyman)
 [![License](https://img.shields.io/github/license/tregor/proxyman?style=flat-square)](LICENSE)
 
 
