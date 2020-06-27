@@ -55,9 +55,8 @@ class Proxy
 		];
 	}
 
-	public function checkConnection($url = "http://dynupdate.no-ip.com/ip.php", $method = "GET", $timeout = 1)
+	public function checkConnection($url = "https://www.google.com/", $method = "GET", $timeout = 1)
 	{
-		//http://dynupdate.no-ip.com/ip.php
 		$refer = parse_url($url)["host"];
 
 		$ch = curl_init();
@@ -90,7 +89,6 @@ class Proxy
 		$response = curl_exec($ch);
 		$info = curl_getinfo($ch);
 		if ($response === FALSE){
-			//var_dump(["ERROR" => [curl_errno($ch) => curl_error($ch)], "INFO" => $info]);
 			if (curl_errno($ch) == 28){
 				throw new ProxyTimeout($this);
 			}elseif (curl_errno($ch) == 56){
@@ -99,19 +97,6 @@ class Proxy
 				throw new ProxyException(curl_error($ch));
 			}
 		}else{
-			//var_dump(["RESPONSE" => $response, "INFO" => $info]);
-			/*
-			if ($info["http_code"] != 200){
-				switch ($info["http_code"]){
-					case 409: throw new ProxyException($this, "Can't connect to proxy, 409 conflict", 12);
-					default: throw new ProxyException($this, "HTTP code is ".$info["http_code"]);
-				}
-			}else{
-				if ($info["primary_ip"] !== $this->host){
-					throw new ProxyException($this, "Primary ip is not equal to proxy host");
-				}
-			}
-			/**/
 			$this->info["ping"] = $info["connect_time"]*1000;
 		}
 		curl_close($ch);

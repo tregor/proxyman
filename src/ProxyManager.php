@@ -85,8 +85,12 @@ class ProxyManager
 		}
 	}
 
-	public static function getAllProxy()
+	public static function getAllProxies()
 	{
-		return self::$proxyList;
+		$proxies = [];
+		foreach (self::$proxyList as $proxy){
+			$proxies[] = $proxy->getInfo();
+		}
+		return $proxies;
 	}
 }

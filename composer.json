@@ -1,0 +1,13 @@
+{
+  "name": "tregor/proxyman",
+  "description": "ProxyMan is OpenSource library for PHP, that makes work with proxies easy!",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "tregor",
+      "email": "tregor1997@gmail.com"
+    }
+  ],
+  "require": {}
+}
