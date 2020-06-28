@@ -9,5 +9,10 @@
       "email": "tregor1997@gmail.com"
     }
   ],
-  "require": {}
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "ProxyMan\\": "src/"
+    }
+  }
 }
