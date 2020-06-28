@@ -1,9 +1,9 @@
 <?php
 include_once "src/ProxyManager.php";
 include_once "src/Proxy.php";
-include_once "src/Exceptions/ProxyException.php";
-include_once "src/Exceptions/ProxyTimeout.php";
-include_once "src/Exceptions/ProxyUnreachable.php";
+include_once "src/Exception/ProxyException.php";
+include_once "src/Exception/ProxyTimeout.php";
+include_once "src/Exception/ProxyUnreachable.php";
 
 use tregor\ProxyMan\Exception\ProxyException;
 use tregor\ProxyMan\ProxyManager;
