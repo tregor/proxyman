@@ -146,7 +146,7 @@ class Proxy
 	 */
 	public function getUserPass()
 	{
-		return $this->host.":".$this->port;
+		return $this->username.":".$this->password;
 	}
 
 	/**
